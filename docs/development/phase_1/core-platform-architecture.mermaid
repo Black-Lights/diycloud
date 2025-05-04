@@ -1,0 +1,41 @@
+graph TD
+    subgraph User["User Interaction"]
+        Browser["Web Browser"]
+    end
+
+    subgraph CorePlatform["Core Platform Module"]
+        Nginx["Nginx Web Server"]
+        SSL["SSL Certificate Management"]
+        Portal["Web Portal Interface"]
+    end
+
+    subgraph FutureModules["Future Modules (Placeholders)"]
+        Jupyter["JupyterHub Module<br>(Phase 3)"]
+        Docker["Docker/Portainer Module<br>(Phase 3)"]
+        Monitoring["Monitoring Module<br>(Phase 4)"]
+    end
+
+    subgraph DistributionAbstractionLayer["Distribution Abstraction Layer (Phase 0)"]
+        Detect["Distribution Detection"]
+        Package["Package Management"]
+        Service["Service Management"]
+        Path["Path Resolution"]
+        Resource["Resource Management"]
+    end
+
+    Browser -->|"HTTPS Request"| Nginx
+    Nginx -->|"SSL Termination"| SSL
+    SSL -->|"Forward Request"| Portal
+    Portal -->|"Placeholder URLs"| FutureModules
+
+    Nginx -.->|"Depends on"| DistributionAbstractionLayer
+    SSL -.->|"Depends on"| DistributionAbstractionLayer
+    Portal -.->|"Depends on"| DistributionAbstractionLayer
+
+    classDef current fill:#4CAF50,stroke:#388E3C,color:white;
+    classDef future fill:#FFC107,stroke:#FFA000,color:black;
+    classDef complete fill:#2196F3,stroke:#1976D2,color:white;
+
+    class CorePlatform,Nginx,SSL,Portal current;
+    class FutureModules,Jupyter,Docker,Monitoring future;
+    class DistributionAbstractionLayer,Detect,Package,Service,Path,Resource complete;

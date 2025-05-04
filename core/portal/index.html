@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Cloud Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/logo.svg" alt="DIY Cloud Platform Logo" class="logo">
+            <h1>DIY Cloud Platform</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to DIY Cloud Platform</h2>
+            <p>A self-hosted resource sharing platform that allows you to turn any Linux server into a multi-user cloud environment. Share your CPU, RAM, GPU, and disk resources with others through JupyterHub notebooks and Docker containers.</p>
+        </section>
+
+        <section class="services">
+            <h2>Services</h2>
+            <div class="service-grid">
+                <div class="service-card" id="jupyter-card">
+                    <div class="service-icon jupyter-icon"></div>
+                    <h3>JupyterHub</h3>
+                    <p>Access Python notebooks for data science and machine learning work.</p>
+                    <div class="status pending">Coming in Phase 3</div>
+                    <a href="/jupyter/" class="service-btn disabled">Access JupyterHub</a>
+                </div>
+
+                <div class="service-card" id="docker-card">
+                    <div class="service-icon docker-icon"></div>
+                    <h3>Docker & Portainer</h3>
+                    <p>Deploy and manage containerized applications with ease.</p>
+                    <div class="status pending">Coming in Phase 3</div>
+                    <a href="/portainer/" class="service-btn disabled">Access Portainer</a>
+                </div>
+
+                <div class="service-card" id="monitoring-card">
+                    <div class="service-icon monitoring-icon"></div>
+                    <h3>Monitoring</h3>
+                    <p>View system metrics and resource usage across the platform.</p>
+                    <div class="status pending">Coming in Phase 4</div>
+                    <a href="/monitoring/" class="service-btn disabled">Access Monitoring</a>
+                </div>
+
+                <div class="service-card" id="admin-card">
+                    <div class="service-icon admin-icon"></div>
+                    <h3>Administration</h3>
+                    <p>Manage users, resources, and system settings.</p>
+                    <div class="status pending">Coming in Phase 2</div>
+                    <a href="/admin/" class="service-btn disabled">Access Admin Panel</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="system-status">
+            <h2>System Status</h2>
+            <div class="status-grid">
+                <div class="status-card">
+                    <h3>Core Platform</h3>
+                    <div class="status active">Active</div>
+                </div>
+                <div class="status-card">
+                    <h3>User Management</h3>
+                    <div class="status pending">Pending</div>
+                </div>
+                <div class="status-card">
+                    <h3>JupyterHub</h3>
+                    <div class="status pending">Pending</div>
+                </div>
+                <div class="status-card">
+                    <h3>Docker/Portainer</h3>
+                    <div class="status pending">Pending</div>
+                </div>
+                <div class="status-card">
+                    <h3>Resource Management</h3>
+                    <div class="status pending">Pending</div>
+                </div>
+                <div class="status-card">
+                    <h3>Monitoring</h3>
+                    <div class="status pending">Pending</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.svg" alt="DIY Cloud Platform Logo" class="logo-small">
+                <p>DIY Cloud Platform</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-about">
+                <h4>About</h4>
+                <p>DIY Cloud Platform is an open-source project that enables resource sharing across multiple Linux distributions.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DIY Cloud Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2ecc71" />
+    </linearGradient>
+  </defs>
+  <rect x="25" y="25" width="150" height="150" rx="20" fill="url(#gradient)" />
+  
+  <!-- Server Stack -->
+  <rect x="50" y="60" width="100" height="20" rx="5" fill="white" opacity="0.9" />
+  <rect x="50" y="90" width="100" height="20" rx="5" fill="white" opacity="0.9" />
+  <rect x="50" y="120" width="100" height="20" rx="5" fill="white" opacity="0.9" />
+  
+  <!-- Cloud Symbol -->
+  <circle cx="75" cy="50" r="10" fill="white" opacity="0.9" />
+  <circle cx="95" cy="45" r="12" fill="white" opacity="0.9" />
+  <circle cx="115" cy="50" r="10" fill="white" opacity="0.9" />
+  <rect x="75" y="50" width="40" height="10" fill="white" opacity="0.9" />
+  
+  <!-- CPU Symbol -->
+  <rect x="70" y="65" width="10" height="10" fill="#3498db" />
+  
+  <!-- RAM Symbol -->
+  <rect x="70" y="95" width="5" height="10" fill="#3498db" />
+  <rect x="77" y="95" width="5" height="10" fill="#3498db" />
+  <rect x="84" y="95" width="5" height="10" fill="#3498db" />
+  
+  <!-- Disk Symbol -->
+  <circle cx="75" cy="130" r="5" fill="#3498db" />
+  <circle cx="75" cy="130" r="2" fill="white" />
+  
+  <!-- Connection Lines -->
+  <rect x="125" y="70" width="2" height="20" fill="#3498db" />
+  <rect x="125" y="100" width="2" height="20" fill="#3498db" />
+</svg>
