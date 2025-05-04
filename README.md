@@ -225,6 +225,7 @@ curl -H "Authorization: Bearer YOUR_TOKEN" \
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+Please see the [CONTRIBUTING](CONTRIBUTING.md) file for details
 
 ## License
 
