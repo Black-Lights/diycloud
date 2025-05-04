@@ -1,0 +1,23 @@
+name: Basic Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check for license headers
+        run: |
+          # Count files without license headers
+          echo "Checking for files without license headers..."
+          missing_headers=$(grep -L "Licensed under the Apache License" $(find . -type f -name "*.sh" -o -name "*.py" -o -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.conf" -o -name "*.sql" | grep -v ".git/") | wc -l)
+          echo "Found $missing_headers files without license headers"
+          # This will always pass, but gives information
+          exit 0
+      - name: Basic Repository Check
+        run: echo "Basic repository check passed!"

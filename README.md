@@ -228,4 +228,17 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+The Apache License 2.0 is a permissive license that allows you to:
+- Use the software for commercial purposes
+- Modify the software and create derivative works
+- Distribute original or modified versions of the software
+- Sublicense the software
+
+While requiring you to:
+- Include the license and copyright notice with redistributions
+- Document significant changes made to the software
+- Not use the names of contributors for promotion without permission
+
+Additionally, the license provides an express grant of patent rights from contributors to users.
